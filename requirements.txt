@@ -1,0 +1,6 @@
+bs4==0.0.1
+cachetools==4.2.4
+networkx==2.6.3
+numba==0.54.1
+requests==2.26.0
+requests-cache==0.8.1
