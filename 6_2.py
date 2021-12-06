@@ -13,8 +13,8 @@ def get_days_left_at_spawns(individual, days_left):
 @cache
 def num_fish(individual, days_left):
     posterity = 0
-    for days_left_at_spawns in get_days_left_at_spawns(individual, days_left):
-        posterity += num_fish(8, days_left_at_spawns)
+    for days_left_at_spawn in get_days_left_at_spawns(individual, days_left):
+        posterity += num_fish(8, days_left_at_spawn)
     return 1 + posterity
 
 print(sum(map(lambda f: num_fish(f, 256), input)))
