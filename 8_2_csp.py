@@ -34,13 +34,13 @@ def solve_line(input_digits, output_digits):
                                                           f in digit and
                                                           g not in digit for digit in digits if len(digit) == 4))
     problem.addConstraint(lambda a, d, g: all(a in digit and
-                                                          d in digit and
-                                                          g in digit for digit in digits if len(digit) == 5),
-                                                          ("a", "d", "g"))
+                                              d in digit and
+                                              g in digit for digit in digits if len(digit) == 5),
+                                              ("a", "d", "g"))
     problem.addConstraint(lambda a, f, g: all(a in digit and
-                                                          f in digit and
-                                                          g in digit for digit in digits if len(digit) == 6),
-                                                          ("a", "f", "g"))
+                                              f in digit and
+                                              g in digit for digit in digits if len(digit) == 6),
+                                              ("a", "f", "g"))
 
     solution = problem.getSolutions()[0]
 
